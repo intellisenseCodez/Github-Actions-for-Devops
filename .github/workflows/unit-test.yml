@@ -26,5 +26,8 @@ jobs:
             - name: install dependencies
               run: pip install -r requirements.txt
 
+            - name: freeze dependencies
+              run: pip freeze requirements.txt
+
             - name: run code
               run: pytest
