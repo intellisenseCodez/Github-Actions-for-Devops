@@ -1,15 +1,22 @@
 name: Github Actions Hello World # workflow
 
-on:  # trigger
+on:  # Event
     push:
         branches:
             - master
 
-jobs:
-    hello-world:
+jobs: # Job
+    hello-world_1:
         runs-on: ubuntu-latest # runner: ubuntu, window, mac-os
         steps:
             - name: echo hello world
-              run: echo "Hello World"
+              run: echo "Hello World 1"
+
+    hello-world_2:
+        runs-on: ubuntu-latest # runner: ubuntu, window, mac-os
+        steps:
+            - name: echo hello world
+              run: echo "Hello World 2"
+
 
 
