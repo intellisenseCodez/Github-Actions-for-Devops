@@ -18,5 +18,11 @@ jobs: # Job
             - name: echo hello world
               run: echo "Hello World 2"
 
+    github-actions-contexts:
+        runs-on: ubuntu-latest # runner: ubuntu, window, mac-os
+        steps:
+            - name: Github Action Contexts
+              run: echo ${{ toJson(github.event) }}
+
 
 
